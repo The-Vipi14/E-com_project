@@ -1,0 +1,392 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  /* background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+   */
+   background: #fff;
+   
+   user-select: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 17px;
+  box-shadow: 0 2px 2px 2px rgb(227, 226, 226);
+  position: sticky;
+  top:0;
+}
+/* .logo{
+  border: 2px solid black;
+} */
+.logo img {
+  height: 90px;
+}
+
+ul {
+  margin-right: 45px;
+  margin-top: 8px;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-top:20px;
+}
+
+ul li a {
+  margin-inline: 22px;
+  font-size: 20px;
+}
+
+ul li i {
+  font-size: 22px;
+}
+
+ul li #home {
+  color: rgb(4, 125, 125);
+}
+ul li a:hover {
+  border-bottom: 2px solid rgb(33, 34, 34);
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+.main .main-text {
+  margin-top: 100px;
+}
+.main-text h1 {
+  font-size: 64px;
+}
+.main-text .top {
+  color: rgb(4, 138, 138);
+}
+.main-text button {
+  width: 145px;
+  height: 40px;
+  background: rgb(4, 140, 140);
+  border: none;
+  font-size: 22px;
+  color: white;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.main-text button:hover {
+  border: 2px solid rgb(3, 143, 143);
+  background: transparent;
+  color: rgb(2, 121, 121);
+}
+.main-text p {
+  margin-top: 12px;
+}
+.main img{
+  width: 30%;
+}
+/* cards */
+.trend {
+  display: none;
+}
+.head {
+  text-align: center;
+  padding: 33px;
+  margin-top: 22px;
+  
+}
+.head span {
+  color: rgb(1, 161, 161);
+}
+.card {
+  display: flex;
+  justify-content: center;
+}
+.item-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 100px;
+  max-width: 1400px;
+  margin: 10px;
+  width: 100%;
+  /* background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.card .crd {
+  width: 255px;
+  height: 450px;
+  background: #fff;
+  margin-inline: 11px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease;
+  border-radius: 5px;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.crd img {
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  /* margin-left: 24px; */
+}
+.crd:hover {
+  height: 452px;
+  float: right;
+  border-radius: 10px;
+  box-shadow: 1px 2px 6px 2px rgb(204, 203, 203);
+}
+.crd-text {
+  margin-left: 21px;
+  padding: 9px;
+}
+
+.crd-text button {
+  width: 130px;
+  height: 33px;
+  border: none;
+  background: rgb(5, 146, 146);
+  color: white;
+  font-size: 19px;
+  margin-top: 11px;
+  cursor: pointer;
+}
+.crd-text i {
+  color: rgb(216, 216, 46);
+}
+
+/* about us */
+.about {
+  display: none;
+}
+.about-us {
+  background: rgb(1, 1, 63);
+  color: white;
+  padding: 66px;
+  font-size: 22px;
+}
+.me {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  background: white;
+  margin-left: 23%;
+  margin-top: 8%;
+  gap: 30px;
+}
+.me img {
+  width: 40%;
+  background: transparent;
+  margin-top: -50px;
+}
+
+/* .contact */
+
+.contact {
+  display: none;
+}
+.contact-us {
+  background-color: rgb(1, 1, 42);
+  color: white;
+  padding: 56px;
+  font-size: 19px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin-top: 5%;
+  background-color: #fff;
+  margin-left: 10%;
+}
+.contact-me img {
+  width: 40%;
+}
+
+.contact-text {
+  padding: 22px;
+  width: 566px;
+  font-size: 27px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.contact-text p {
+  margin-top: 12px;
+}
+.form {
+  text-align: center;
+  margin-top: 5%;
+  padding: 22px;
+}
+.form input {
+  width: 300px;
+  padding: 5px;
+  height: 27px;
+  margin-top: 11px;
+}
+.form button {
+  width: 300px;
+  height: 36px;
+  background-color: rgb(2, 54, 54);
+  color: white;
+  font-size: 22px;
+  border: none;
+  margin-top: 22px;
+}
+
+/* cart */
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.cartText {
+  padding: 22px;
+  margin-top: 22px;
+}
+.cartText p {
+  margin-top: 12px;
+}
+.cartText h2 {
+  margin-top: 11px;
+}
+.cartText .btn button {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(255, 89, 0);
+  color: white;
+  border: none;
+  font-size: 22px;
+  margin-inline: 11px;
+  margin-top: 22px;
+}
+.cartText .back {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(4, 81, 81);
+  color: white;
+  border: none;
+  font-size: 22px;
+  margin-inline: 11px;
+  margin-top: 22px;
+  margin-top: 22px;
+}
+
+/* blog */
+
+.blog {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  margin-inline: 22px;
+  border-radius: 11px;
+}
+.blog img {
+  width: 85%;
+  padding: 22px;
+}
+.blog-text {
+  padding: 22px;
+  margin-top: 33px;
+}
+.blog-text a {
+  width: 122px;
+  height: 18px;
+  padding: 5px;
+  background: rgb(3, 136, 136);
+  color: white;
+  font-size: 19px;
+  position: relative;
+  top: 22px;
+}
+
+/* letter */
+
+.letter {
+  background: rgb(4, 4, 106);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 45px;
+  margin-top: 40px;
+}
+.inp {
+  display: flex;
+}
+.inp input {
+  width: 330px;
+  height: 33px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 20px;
+}
+.inp button {
+  width: 140px;
+  background: aqua;
+  height: 40px;
+  border: none;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 55px;
+  background: black;
+  color: white;
+}
+.footer .footer-text {
+  margin-inline: 85px;
+}
+.footer-text p {
+  margin-top: 11px;
+  font-size: 20px;
+}
+
+
+/* cart  */
+.login-cart {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.login-cart button {
+  height: 60px;
+  width: 158px;
+  outline: none;
+  border: 1px solid #515151;
+  border-radius: 75px;
+  font-weight: 500;
+  font-size: 20px;
+  background: transparent;
+  color: #515151;
+  cursor: pointer;
+}
+.login-cart button:active {
+  background: #eeecec;
+}
+.nav-cart-count{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 23px;
+  width: 23px;
+  color: #fff;
+  border-radius: 200px;
+  margin-left: -66px;
+  margin-top: -26px;
+  background-color: red;
+}

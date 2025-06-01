@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minor Project</title>
+    <link rel="stylesheet" href="../styles/indexs.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="../images/shopping-online.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    <a id="home" onclick="homes()">Home</a>
+                    <a id="shop" onclick="shops()">Shops</a>
+                    <a id="blog" onclick="blogs()">Blog</a>
+                    <a id="about" onclick="abouts()">About</a>
+                    <a id="contact" onclick="contacts()">Contact</a>
+                    
+                    <!-- <i class="fa-sharp fa-solid fa-cart-shopping"></i> -->
+                </li>
+            </ul>
+            <div class="login-cart">
+                <div id="current-user" style="height: 20px; width: 20px; margin-right: 170px ;"></div>
+                <a href="../Pages/home.html"><button class="logout-btn">log out</button></a>
+                <a href=""><img src="../products/logo.png" alt=""></a>
+                <div class="nav-cart-count">0</div>
+            </div>
+        </nav>
+
+        <!-- mainpage -->
+        <div class="main">
+            <div class="main-text">
+                <h2>Trends</h2>
+                <h1 class="top">Super Value Deals</h1>
+                <h1>On all Products</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, alias!</p>
+                <button>explore</button>
+            </div>
+            <img src="../products/hero_image.png" alt="">
+        </div>
+
+        <!-- Men's Wear cards -->
+        <div class="trend">
+            <div class="head">
+                <h1>Trends <span>Men's Wear</span></h1>
+            </div>
+            <div class="card item-card" id="mens-card"></div>
+        </div>
+
+        <!-- Women's Wear cards -->
+        <div class="trend" id="trend-sec">
+            <div class="head ">
+                <h1>Trends <span>Women's Wear</span></h1>
+            </div>
+            <div class="card item-card" id="womens-card"></div>
+        </div>
+        <!-- kid's Wear cards -->
+        <div class="trend" id="trend-kid-sec">
+            <div class="head">
+                <h1>Trends <span>Kids's Wear</span></h1>
+            </div>
+            <div class="card item-card" id="kids-card"></div>
+        </div>
+
+        <!-- About us -->
+        <div class="about">
+            <div class="about-us">
+                <h1>#know us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo architecto ipsum dolores dolor illum. Corporis amet.</p>
+            </div>
+            <div class="me">
+                <img src="../img/about/a1.png" alt="">
+                <div class="about-text">
+                    <h1>who we are ?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur quam rem quia et error, repellat officiis voluptatibus quos dolore quae architecto, amet labore corrupti voluptates sint, porro inventore quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ad quos qui, enim commodi vitae facilis asperiores laborum facere accusantium, explicabo veritatis voluptate in perspiciatis maiores mollitia illum, adipisci quibusdam!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- contact us -->
+<div class="contact">
+    <div class="contact-us">
+        <h1>#let's contact</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo architecto ipsum dolores dolor illum. Corporis amet.</p>
+    </div>
+    <div class="contact-me">
+       
+        <div class="contact-text">
+            <h1>visit our office today</h1>
+            <p>Address:Lorem ipsum dolor sit amet consectetur .</p>
+            <p>contact:xxxxxxxx07 </p>
+        </div>
+         <img src="../img/about/a5.jpg" alt="">
+    </div>
+    <form class="form" action="" method="">
+        <h1>Connect with us fill form</h1>
+        <input type="email" placeholder="Enter email"> <br>
+        <input type="text" placeholder="username"> <br>
+        <input type="password" placeholder="password"> <br>
+    </form>
+</div>
+
+        <!-- Cart section -->
+        <div class="cart" id="cart-sec">
+            <img id="newImg" src="" alt="">
+            <div class="cartText">
+                <h1>Trends Offer : Trending Shop <br> Now</h1>
+                <h2>Special Price</h2>
+                <h2>$11</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <div class="btn">
+                    <button>Buy Now</button>
+                    <button id="cart-btn" onclick="addCart()">Add to Cart</button>
+                </div>
+                <button class="back">Back</button>
+            </div>
+        </div>
+        <!--blogs  -->
+
+        <div class="trends">
+            <div class="head">
+                <h1>Trends <span>Men's wear</span></h1>
+            </div>
+            <div class="card ">
+                <div class="blog">
+                    <img src="../products/product_12.png" alt="">
+                    <div class="blog-text">
+                        <h2>Trending cloths</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quis.</p>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="../products/product_14.png" alt="">
+                    <div class="blog-text">
+                        <h2>Trending cloths</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quis.</p>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="../products/product_14.png" alt="">
+                    <div class="blog-text">
+                        <h2>Trending cloths</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quis.</p>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- letter -->
+        <div class="letter">
+            <div class="letter-text">
+                <h1>Signup for newsletter</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, quas
+                    0.</p>
+
+            </div>
+            <form class="inp">
+                <input type="email" placeholder="Enter email">
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-text">
+                <h2>Trends</h2>
+                <p>service</p>
+                <p>Costumer</p>
+                <p>service</p>
+                <p>Costumer</p>
+            </div>
+            <div class="footer-text">
+                <h2>about us</h2>
+                <p>hee</p>
+                <p>jjee</p>
+                <p>service</p>
+                <p>Costumer</p>
+            </div>
+            <div class="footer-text">
+                <h2>adfadsf</h2>
+                <p>adfaf</p>
+                <p>adfad</p>
+                <p>service</p>
+                <p>Costumer</p>
+            </div>
+            <div class="footer-text">
+                <h2>dfasff</h2>
+                <p>dfad</p>
+                <p>adfadf</p>
+                <p>service</p>
+                <p>Costumer</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
